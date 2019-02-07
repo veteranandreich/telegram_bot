@@ -125,7 +125,6 @@ def get_tommorow(message: telebot.types.Message) -> None:
     bot.send_message(message.chat.id, response, parse_mode='HTML')
 
 @bot.message_handler(commands=['week'])
-
 def get_week(message: telebot.types.Message) -> None:
     try:
         _, week, group = message.text.split()
